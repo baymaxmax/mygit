@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 44px;
+    background-color: #006699; 
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+header h3 {
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+    font-weight: normal;
+}
+header a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url('../images/jd-sprites.png');
+    background-size: 400px 400px;
+    background-position: -167px 0;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+}
+
+/* 主要内容栏开始 */
+
+/* 广告栏开始 */
+.main .banner {
+    width: 100%;
+    /* overflow-x: hidden; */
+    position: relative;
+}
+
+ .main .banner img {
+    display: block;
+    /* position: absolute; */
+    width: 100%;
+    height: auto;
+    /* float: left; */
+    /* transform: translate3d(100%,0,0); */
+    /* transition: all 3s ease; */
+} 
+.main .nav {
+    padding: 10px 10px 15px 10px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.main .nav li {
+    width: 33.3333333%;
+    float: left;
+}
+.main .nav img {
+    display: block;
+    width: 100%;
+}
+.sale {
+    width: 100%;
+    padding: 0 10px;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    font-size: 0;
+}
+.sale ul {
+    height: 100%;
+    overflow: hidden;
+}
+.sale li {
+    float: left;
+    width: 33.54%; 
+}
+.sale li img{
+    width: 100%;
+}
+
+.sale li:nth-child(3){
+    float: right;
+    width: 32.92%;
+    height: 100%;
+    
+}
+.sale li:nth-child(3) img{
+    height: 100%;   
+}
+/*品牌 */
+.brand,.sports {
+    width: 100%;
+    padding: 0 10px;
+}
+.brand .top img,.sports .top img {
+    width: 100%;
+}
+.brand ul {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.brand li {
+    width: 25%;
+    float: left;
+}
+.brand li img {
+    width: 100%;
+}
+.sports ul{
+    padding: 19px 5px;
+    overflow: hidden;
+}
+.sports li {
+    margin-bottom: 10px;
+    float: left;
+    width: 48%;
+    /* height: 276px; */
+    box-shadow: 0 0 15px #ccc ;
+    position: relative;
+}
+.sports li:nth-child(2n) {
+    float: right;
+}
+.sports li img {
+    width: 100%;
+}
+.sports li p {
+    height: 36px;
+    width: 100%;
+    padding: 0 12px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8f8f94;
+}
+.sports li .price {
+    color: #ff3300;
+    padding: 15px 20px;
+    
+}
+.sports li del {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.sports li a{
+    display: block;
+    margin-top: 12px;
+    margin-left: 20%;
+    width: 60%;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+
+    background-color: #006699;
+    
+    /* position: absolute; */
+    /* left: 50%; */
+    /* bottom: 10px; */
+    /* transform: translateX(-50%); */
+}
+
+footer{
+    width: 100%;
+    background-color: #006699;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+}
+footer li a {
+    width: 20px;
+    height: 16px;
+    background-image: url('../images/jd-sprites.png');
+    background-position: -2px -30px;
+    background-size: 200px 200px ;
+}
